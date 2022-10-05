@@ -1,0 +1,32 @@
+<mat-sidenav-container class="sidenav-container" color="primary">
+  <mat-sidenav 
+      mode = "side" [(opened)] = 'opened'
+      #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item href="#">Meu Perfil</a>
+      <a mat-list-item href="#">Contate-nos</a>
+      <a mat-list-item href="#">Quem somos</a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+      <mat-toolbar color="primary" class="toolbar01">
+        <button mat-raised-button class = "button_open_nav"mat-button  (click)="opened=!opened" style="font-family: Material Icons;">
+        MENU
+        </button>
+        <h1>E-cologic</h1>
+    </mat-toolbar>
+    
+    <div class="body">
+      <div>
+      </div >
+      <div class="main_text">
+        <h1><strong> Cada pedaço a menos no ambiente,<br> é uma parte a mais <br> que você salva do planeta</strong></h1>
+      </div>
+   </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,49 @@
+.sidenav-container {
+  height: 100%;
+  background-image: url("src\assets\qual-a-importancia-de-ter-trabalho-voluntario-no-curriculo20190829.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+  position:relative;
+  width: 100%;
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+  
+}
+
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  display:flex;
+  
+  top: 0;
+  z-index: 1;
+  box-shadow: 0px 3px 3px rgb(150, 150, 151);
+  justify-content: space-between;
+  padding-right: 47%;
+  
+
+}
+
+
+h1{
+  text-align: justify;
+  line-height: 1;
+  font-size: 50px;
+  color: white;
+  font-family: 'Roboto Serif', serif;
+}
+
+.main_text{
+  display: flex;
+  flex-direction: row;
+  background-color: #2195f3;
+  padding-top: 30px;
+  justify-content: center;
+  
+}
